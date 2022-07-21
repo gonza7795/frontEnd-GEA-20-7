@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: #316bb3;
 }
 .redes{
     margin-right: 0.5em;

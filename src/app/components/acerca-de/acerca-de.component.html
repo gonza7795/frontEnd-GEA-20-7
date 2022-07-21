@@ -1,15 +1,61 @@
-<div class="row">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/perfilPhoto.jpg" class="img-fluid" id="fotodeperfil">
+<div id="azul" class="row" *ngIf="persona">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
+
+      <!-- <img src="../../../assets/perfil.png" class="img-fluid" id="fotodeperfil" >-->
+        
+      
+      <img src={{persona.img}} class="img-fluid" id="fotodeperfil">
+
+   
+
+
     </div>
+
+
+
+
+    
+
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
-        <p>Full Stack Developer Jr</p>
+       
+
+        <!-- para usar la base d datos .json -->
+       <!--     <h3 id="nombre" >Gonzalo Alvarez</h3>-->
+       <h3 id="nombreCompleto" > {{persona.nombre}} {{persona.apellido}}</h3> 
+        
+       
+
+
+         <!-- para usar la base d datos .json -->
+
+        
+
+            
+
+
+          
+
+   <!--   <h5> Full Stack Developer Jr</h5> -->
+
+    <h5> {{persona.titulo}}</h5> 
+
+        
+
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+
+    <div class="col-xs-12 col-sm-8col-md-8 col-lg-8"> 
         <span>
-            <h1>Acerca de mí</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus porro architecto! Pariatur eum magni ipsam et repudiandae, perferendis ab dignissimos voluptatem eos quas quis. Quis explicabo odit rerum voluptas?</p>
-        </span>
+            <h3 class="text-light">Acerca de mí</h3>
+            
+     <!--  <p class="text-light">Ingeniero Electromecánico y Doctor en Ingeniería Industrial. Coordinador y Desarrollador de Proyectos en diversas ramas de la ingeniería: procesos, productos, optimización, programación en varios lenguajes</p>  -->  
+            <p class="text-light" >{{persona.descripcion}}</p>
+    
+    
+    </span>
     </div>
-</div> 
+
+  </div>
+
+
+
+
