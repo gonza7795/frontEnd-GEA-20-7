@@ -1,15 +1,108 @@
-.row{
+#margin-top {
+
+    margin-top: 30px;
+
+
+}
+
+#azul {
+
+    padding-bottom: 50px;
+    background: #316bb3;
+
+
+}
+       
+   
+   
+   
+  
+
+  #logo-proyecto-img {
+
+    width: 15%;
+
+  }
+
+
+  .row {
     padding: 20px;
-    background-color: #a1b5cb;
+
+} 
+
+
+
+
+
+
+h1, h3 {
+    display: inline;
 }
-.contenedor{
-    width: auto;
+
+
+
+
+
+/* grande */
+@media (min-width: 992px) {
+   #imagen-proyecto-img {
+
+
+    padding-top: 20px;
+        
+        width: 900px;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px grey;
+        left: 3%;
+        top: 600px;
+    }
 }
-.parte1, .parte2{
-    display: inline-block;
-    text-align: justify;
+
+
+/* mediano */
+@media  (max-width: 991px) and (min-width: 576px)  {
+    
+    #imagen-proyecto-img {
+
+
+        padding-top: 50px;
+
+      
+        
+        width: 600px;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px grey;
+        left: 3%;
+        top: 600px;
+    }
+
 }
-.img-proyecto{
-    box-shadow: 10px 10px 30px #000000;
-    box-shadow: ejeX ejeY difumasion color;
+
+
+/* chico */
+@media (max-width: 575px) {
+    #imagen-proyecto-img {
+
+        padding-top: 50px;
+        
+        width: 400px;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px grey;
+        left: 33%;
+        top: 600px;
+    }
 }
+
+
+#espacio-abajo-azul {
+
+    padding-bottom: 70px;
+    background: #316bb3;
+    padding-top: 100px;
+
+
+}
+
+
+
+
