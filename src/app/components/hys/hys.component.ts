@@ -34,7 +34,7 @@ export class HysComponent implements OnInit {
     this.sHys.lista().subscribe(data => { this.hys = data; })
   }
 
-  deletePro(id?: number){
+  deleteHys(id?: number){
     if(id != undefined){
       this.sHys.delete(id).subscribe(
         data => {

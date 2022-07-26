@@ -8,6 +8,11 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { EditProyectoComponent} from './components/proyecto/edit-proyecto/edit-proyecto.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto/new-proyecto.component';
+import {EditHysComponent} from './components/hys/edit-hys/edit-hys.component';
+
+import {NewHysComponent} from './components/hys/new-hys/new-hys.component';
+
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,6 +28,10 @@ const routes: Routes = [
   { path: 'editpro/:id', component: EditProyectoComponent},
 
   { path: 'nuevopro', component: NewProyectoComponent},
+
+  { path: 'edithys/:id', component: EditHysComponent},
+
+  { path: 'nuevohys', component: NewHysComponent},
 ];
 
 @NgModule({

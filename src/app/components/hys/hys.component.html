@@ -51,11 +51,45 @@
           
             
 
+       
+
         </div>  
+
+        <td *ngIf="isLogged" >
+            <button class="btn btn-light" routerLink="/edithys/{{Hys.id}}">
+                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+        </td>
+
+
+
+        <td *ngIf="isLogged" >
+            <button class="btn btn-danger" (click)="deleteHys(Hys.id)">
+                <i class="bi bi-trash-fill"></i> BORRAR</button>
+        </td>
+
+
+
+
+        
+
+
+
+   
+  
+
 
     </div>  
 
 </div>  
+
+
+
+
+<div class="col-lg-11" id="azul"  class="text-center">
+    <button type="button" class="btn btn-dark" routerLink="/nuevohys" *ngIf="isLogged">
+        Nuevo HyS
+    </button>
+</div>
 
 
 
