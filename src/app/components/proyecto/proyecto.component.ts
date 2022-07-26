@@ -35,7 +35,7 @@ export class ProyectoComponent implements OnInit {
         data => {
           this.cargarProyectos();
         }, err => {
-          alert("No se pudo borrar la Educacion");
+          alert("No se pudo borrar el proyecto");
         }
       )
     }
