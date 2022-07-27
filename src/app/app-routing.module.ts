@@ -13,6 +13,9 @@ import {EditHysComponent} from './components/hys/edit-hys/edit-hys.component';
 import {NewHysComponent} from './components/hys/new-hys/new-hys.component';
 
 
+import {EditYoComponent} from './components/yo/edit-yo/edit-yo.component';
+
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,6 +35,12 @@ const routes: Routes = [
   { path: 'edithys/:id', component: EditHysComponent},
 
   { path: 'nuevohys', component: NewHysComponent},
+
+
+  { path: 'edityo/:id', component: EditYoComponent},
+
+
+
 ];
 
 @NgModule({

@@ -1,69 +1,76 @@
+<div id="azul" class="row" *ngFor="let Yo of yo">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
 
-
-<div id="azul" class="row">
-    <h1 ></h1>
-  </div>
-    <div id="azul"   class="text-center">
+      <!-- <img src="../../../assets/perfil.png" class="img-fluid" id="fotodeperfil" >-->
         
-    <div class="container">
-  
-     
-    <h2 class="font-italic">Información Personal</h2>
-    <img id="birrete-img" src="../../../assets/birrete1.png" alt="" class="center" class="img-fluid" >
-  
-    </div>
-  
-       
-  
-     
-  <div  *ngFor="let Yo of yo" class="container text-center">
-  
+      
+      <img src={{Yo.imgYo}} class="img-fluid" id="fotodeperfil">
+
    
-  
-      <div class="row">
 
 
-        <div class="col-lg-2">
+    </div>
 
-        <img src="{{Yo.imgYo}}" class="img-fluid" id="logo-array-img">
 
-       </div>
-      
-      
-          <div  class="col-lg-8">
 
-            <h2 class="text-light"> {{Yo.nombreYo}} </h2>
+
+    
+
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+       
+
+        <!-- para usar la base d datos .json -->
+       <!--     <h3 id="nombre" >Gonzalo Alvarez</h3>-->
+       <h3 id="nombreCompleto" > {{Yo.nombreYo}} </h3> 
+        
+       
+
+
+         <!-- para usar la base d datos .json -->
+
+        
+
+            
+
+
           
-            <h3 class="text-light ">  {{Yo.descripcionYo}}  </h3>
 
-        </div>  
+   <!--   <h5> Full Stack Developer Jr</h5> -->
 
+    <h5> {{Yo.tituloYo}}</h5> 
+
+        
+
+    </div>
+
+    <div class="col-xs-12 col-sm-8col-md-8 col-lg-8"> 
+        <span>
+            <h3 class="text-light">Acerca de mí</h3>
+            
+     <!--  <p class="text-light">Ingeniero Electromecánico y Doctor en Ingeniería Industrial. Coordinador y Desarrollador de Proyectos en diversas ramas de la ingeniería: procesos, productos, optimización, programación en varios lenguajes</p>  -->  
+            <p class="text-light" >{{Yo.descripcionYo}}</p>
+    
+    
+    </span>
+    </div>
+
+
+      <!-- Button trigger modal -->
+      <td *ngIf="isLogged">
+      <button type="button" class="btn btn-secondary btn-lg" routerLink="/edityo/{{Yo.id}}" >
+        Editar Información sobre {{Yo.nombreYo}} </button>
+
+     </td>
+
+
+
+
+
+      
+        
         </div>
 
-
-
-       
-            <!--
-            <td *ngIf="isLogged">
-                <button class="btn btn-light" routerLink="/editeduc/{{Yo.id}}">
-                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
-            </td>
-
-
-            -->
-
-         
-      
-      
-
-
   
-  
-  </div>
 
-
- 
-
-
-
+<!---->
 
