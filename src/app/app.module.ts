@@ -26,6 +26,7 @@ import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-
 import { NewProyectoComponent } from './components/proyecto/new-proyecto/new-proyecto.component';
 import { EditHysComponent } from './components/hys/edit-hys/edit-hys.component';
 import { NewHysComponent } from './components/hys/new-hys/new-hys.component';
+import { YoComponent } from './components/yo/yo.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { NewHysComponent } from './components/hys/new-hys/new-hys.component';
     NewProyectoComponent,
     EditHysComponent,
     NewHysComponent,
+    YoComponent,
   ],
   imports: [
     BrowserModule,

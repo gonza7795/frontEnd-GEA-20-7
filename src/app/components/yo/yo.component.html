@@ -1,0 +1,69 @@
+
+
+<div id="azul" class="row">
+    <h1 ></h1>
+  </div>
+    <div id="azul"   class="text-center">
+        
+    <div class="container">
+  
+     
+    <h2 class="font-italic">Información Personal</h2>
+    <img id="birrete-img" src="../../../assets/birrete1.png" alt="" class="center" class="img-fluid" >
+  
+    </div>
+  
+       
+  
+     
+  <div  *ngFor="let Yo of yo" class="container text-center">
+  
+   
+  
+      <div class="row">
+
+
+        <div class="col-lg-2">
+
+        <img src="{{Yo.imgYo}}" class="img-fluid" id="logo-array-img">
+
+       </div>
+      
+      
+          <div  class="col-lg-8">
+
+            <h2 class="text-light"> {{Yo.nombreYo}} </h2>
+          
+            <h3 class="text-light ">  {{Yo.descripcionYo}}  </h3>
+
+        </div>  
+
+        </div>
+
+
+
+       
+            <!--
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editeduc/{{Yo.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+            </td>
+
+
+            -->
+
+         
+      
+      
+
+
+  
+  
+  </div>
+
+
+ 
+
+
+
+
